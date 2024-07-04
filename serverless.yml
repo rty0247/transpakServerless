@@ -1,0 +1,35 @@
+service: transpak
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1
+
+functions:
+  app:
+    handler: handler.handler
+    events:
+      - http:
+          path: /{proxy+}
+          method: any
+
+plugins:
+  - serverless-offline
+  - serverless-deployment-bucket
+
+custom:
+  deploymentBucket:
+    name: transpak-dev-serverlessdeploymentbucket-llfz5tr5bkom
+
+package:
+  exclude:
+    - .git/**
+    - .vscode/**
+    - .DS_Store
+    - README.md
+    - .serverless/**
+  include:
+    - src/**
+    - handler.js
+    - app.js
+    - node_modules/**

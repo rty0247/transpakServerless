@@ -1,0 +1,40 @@
+{
+  "barrier": [
+    {
+      "Title": "Barrier1",
+      "Description": "Flat Sheet",
+      "Material": "MIL-PRF-131K",
+      "UOM": "SF",
+      "Width": "findItemsInMaterialList('Width', 'Floater1', 'Deck', 'PLY, 3/4', objectMap) + 12",
+      "Length": "findItemsInMaterialList('Length', 'Floater1', 'Deck', 'PLY, 3/4', objectMap) + 12",
+      "Quantity": 2
+    },
+    {
+      "Title": "Barrier2",
+      "Description": "Sides/Ends",
+      "Material": "MIL-PRF-131K",
+      "UOM": "SF",
+      "Width": "oheight + 2",
+      "Length": "((olength + owidth) * 2) + 2",
+      "Quantity": 1
+    },
+    {
+      "Title": "Barrier3",
+      "Description": "Desiccant",
+      "Material": "DESICCANT, 16-U",
+      "UOM": "EA",
+      "Width": 0.0,
+      "Length": 0.0,
+      "Quantity": "Math.ceil(2 * (olength * oheight + owidth * oheight + olength * owidth) * 0.002 / 16)"
+    },
+    {
+      "Title": "Barrier4",
+      "Description": "Flat Sheet",
+      "Material": "DURA-SKRIM",
+      "UOM": "SF",
+      "Width": "iwidth",
+      "Length": "ilength",
+      "Quantity": 2
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+    "LBR, 1X4": {
+      "PN": "121-0001",
+      "NomT": 1,
+      "NomW": 4,
+      "ActT": 0.75,
+      "ActW": 3.5,
+      "SCRAP": 0.10,
+      "UNIT_PRICE": 0.895,
+      "Price_will_be_updated": ""
+    },
+    "LBR, 2X4": {
+      "PN": "121-0002",
+      "NomT": 2,
+      "NomW": 4,
+      "ActT": 1.5,
+      "ActW": 3.5,
+      "SCRAP": 0.24,
+      "UNIT_PRICE": 0.494,
+      "Price_will_be_updated": ""
+    },
+    "LBR, 2X6": {
+      "PN": "121-0003",
+      "NomT": 2,
+      "NomW": 6,
+      "ActT": 1.5,
+      "ActW": 5.5,
+      "SCRAP": 0.24,
+      "UNIT_PRICE": 0.379,
+      "Price_will_be_updated": ""
+    },
+    "LBR, 2X10": {
+      "PN": "121-0004",
+      "NomT": 2,
+      "NomW": 10,
+      "ActT": 1.5,
+      "ActW": 9.25,
+      "SCRAP": 0.24,
+      "UNIT_PRICE": 0.372,
+      "Price_will_be_updated": ""
+    },
+    "LBR, 4X4": {
+      "PN": "121-0011",
+      "NomT": 4,
+      "NomW": 4,
+      "ActT": 3.5,
+      "ActW": 3.5,
+      "SCRAP": 0.24,
+      "UNIT_PRICE": 0.611,
+      "Price_will_be_updated": ""
+    },
+    "PLY, 1/4": {
+      "PN": "120-1000",
+      "NomT": 0.25,
+      "NomW": 0,
+      "ActT": 0.25,
+      "ActW": 0,
+      "SCRAP": 0.20,
+      "UNIT_PRICE": 0.35,
+      "Price_will_be_updated": ""
+    },
+    "PLY, 3/8": {
+      "PN": "120-1024",
+      "NomT": 0.375,
+      "NomW": 0,
+      "ActT": 0.375,
+      "ActW": 0,
+      "SCRAP": 0.20,
+      "UNIT_PRICE": 0.49,
+      "Price_will_be_updated": ""
+    },
+    "PLY, 1/2": {
+      "PN": "120-1008",
+      "NomT": 0.5,
+      "NomW": 0,
+      "ActT": 0.5,
+      "ActW": 0,
+      "SCRAP": 0.20,
+      "UNIT_PRICE": 0.682,
+      "Price_will_be_updated": ""
+    },
+    "PLY, 3/4": {
+      "PN": "120-1012",
+      "NomT": 0.75,
+      "NomW": 0,
+      "ActT": 0.75,
+      "ActW": 0,
+      "SCRAP": 0.20,
+      "UNIT_PRICE": 0.909,
+      "Price_will_be_updated": ""
+    },
+    "PE 2#, 2\"": {
+      "PN": "160-1673",
+      "NomT": 2,
+      "NomW": 0,
+      "ActT": 2,
+      "ActW": 0,
+      "SCRAP": 0.14,
+      "UNIT_PRICE": 0.688,
+      "Price_will_be_updated": ""
+    },
+    "PE 2#, 3\"": {
+      "PN": "160-0309",
+      "NomT": 3,
+      "NomW": 0,
+      "ActT": 3,
+      "ActW": 0,
+      "SCRAP": 0.14,
+      "UNIT_PRICE": 0.676,
+      "Price_will_be_updated": ""
+    },
+    "MIL-PRF-131K": {
+      "PN": "140-0616",
+      "NomT": 0,
+      "NomW": 0,
+      "ActT": 0,
+      "ActW": 0,
+      "SCRAP": 0.20,
+      "UNIT_PRICE": 0.206,
+      "Price_will_be_updated": ""
+    },
+    "DESICCANT, 16-U": {
+      "PN": "140-0604",
+      "NomT": 0,
+      "NomW": 0,
+      "ActT": 0,
+      "ActW": 0,
+      "SCRAP": 0.00,
+      "UNIT_PRICE": 1.004,
+      "Price_will_be_updated": ""
+    },
+    "DURA-SKRIM": {
+      "PN": "140-0649",
+      "NomT": 0,
+      "NomW": 0,
+      "ActT": 0,
+      "ActW": 0,
+      "SCRAP": 0.20,
+      "UNIT_PRICE": 0.047,
+      "Price_will_be_updated": ""
+    },
+    "LAG, 3/8 X 3": {
+      "PN": "113-0055",
+      "NomT": 0,
+      "NomW": 0,
+      "ActT": 0,
+      "ActW": 0,
+      "SCRAP": 0.00,
+      "UNIT_PRICE": 0.116,
+      "Price_will_be_updated": ""
+    },
+    "WASH, 3/8": {
+      "PN": "115-0011",
+      "NomT": 0,
+      "NomW": 0,
+      "ActT": 0,
+      "ActW": 0,
+      "SCRAP": 0.00,
+      "UNIT_PRICE": 0.016,
+      "Price_will_be_updated": ""
+    },
+    "KLIMP #4": {
+      "PN": "110-2064",
+      "NomT": 0,
+      "NomW": 0,
+      "ActT": 0,
+      "ActW": 0,
+      "SCRAP": 0.00,
+      "UNIT_PRICE": 0.293,
+      "Price_will_be_updated": ""
+    },
+    "L- OR Z-BRACKET": {
+      "PN": "N/A",
+      "NomT": 0,
+      "NomW": 0,
+      "ActT": 0,
+      "ActW": 0,
+      "SCRAP": 0,
+      "UNIT_PRICE": 25.00,
+      "Price_will_be_updated": ""
+    }
+  }
+  

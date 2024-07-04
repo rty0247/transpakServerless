@@ -1,0 +1,148 @@
+{
+  "crate": [
+    {
+      "Title": "Crate1",
+      "Description": "Skid",
+      "Material": "LBR, 4X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "owidth",
+      "Quantity": "Math.ceil((ilength - findItemsInMaterialList('Width', 'Crate1', 'Skid', 'LBR, 4X4', objectMap) * 2)/24) + 1 ?? 0"
+    },
+    {
+      "Title": "Crate2",
+      "Description": "Floorboard",
+      "Material": "LBR, 2X10",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "ilength",
+      "Quantity": "Math.ceil(iwidth / findItemsInMaterialList('Width', 'Crate2', 'Floorboard', 'LBR, 2X10', objectMap)) ?? 0"
+    },
+    {
+      "Title": "Crate3",
+      "Description": "Side Panels",
+      "Material": "PLY, 3/8",
+      "UOM": "SF",
+      "Width": "iheight + findItemsInMaterialList('Thickness', 'Crate2', 'Floorboard', 'LBR, 2X10', objectMap)",
+      "Length": "olength",
+      "Quantity": 2
+    },
+    {
+      "Title": "Crate4",
+      "Description": "Cleat, Thru-Edge",
+      "Material": "LBR, 1X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Length', 'Crate3', 'Side Panels', 'PLY, 3/8', objectMap)",
+      "Quantity": 4
+    },
+    {
+      "Title": "Crate5",
+      "Description": "Cleat, Filler-Edge",
+      "Material": "LBR, 1X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Width', 'Crate3', 'Side Panels', 'PLY, 3/8', objectMap) - (findItemsInMaterialList('Width', 'Crate4', 'Cleat, Thru-Edge', 'LBR, 1X4', objectMap) * 2)",
+      "Quantity": 4
+    },
+    {
+      "Title": "Crate6",
+      "Description": "Cleat, Interior",
+      "Material": "LBR, 1X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Width', 'Crate3', 'Side Panels', 'PLY, 3/8', objectMap) - (findItemsInMaterialList('Width', 'Crate4', 'Cleat, Thru-Edge', 'LBR, 1X4', objectMap) * 2)",
+      "Quantity": "parseInt((ilength - 3.5) / 24) * 2 ?? 0"
+    },
+    {
+      "Title": "Crate7",
+      "Description": "End Panels",
+      "Material": "PLY, 3/8",
+      "UOM": "SF",
+      "Width": "iheight + findItemsInMaterialList('Thickness', 'Crate1', 'Skid', 'LBR, 4X4', objectMap) + findItemsInMaterialList('Thickness', 'Crate2', 'Floorboard', 'LBR, 2X10', objectMap)",
+      "Length": "iwidth",
+      "Quantity": 2
+    },
+    {
+      "Title": "Crate8",
+      "Description": "Cleat, Thru-Edge",
+      "Material": "LBR, 1X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Width', 'Crate7', 'End Panels', 'PLY, 3/8', objectMap)",
+      "Quantity": 4
+    },
+    {
+      "Title": "Crate9",
+      "Description": "Cleat, Filler-Edge",
+      "Material": "LBR, 1X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Length', 'Crate7', 'End Panels', 'PLY, 3/8', objectMap) - (findItemsInMaterialList('Width', 'Crate8', 'Cleat, Thru-Edge', 'LBR, 1X4', objectMap) * 2)",
+      "Quantity": 4
+    },
+    {
+      "Title": "Crate10",
+      "Description": "Cleat, Interior",
+      "Material": "LBR, 1X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Length', 'Crate8', 'Cleat, Thru-Edge', 'LBR, 1X4', objectMap) - (findItemsInMaterialList('Width', 'Crate9', 'Cleat, Filler-Edge', 'LBR, 1X4', objectMap) * 2)",
+      "Quantity": "parseInt((iwidth - 3.5) / 24) * 2 ?? 0"
+    },
+    {
+      "Title": "Crate11",
+      "Description": "Top Panel",
+      "Material": "PLY, 3/8",
+      "UOM": "SF",
+      "Width": "owidth",
+      "Length": "olength",
+      "Quantity": 1
+    },
+    {
+      "Title": "Crate12",
+      "Description": "Cleat, Thru-Edge",
+      "Material": "LBR, 1X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Width', 'Crate11', 'Top Panel', 'PLY, 3/8', objectMap)",
+      "Quantity": 2
+    },
+    {
+      "Title": "Crate13",
+      "Description": "Cleat, Filler-Edge",
+      "Material": "LBR, 1X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Length', 'Crate11', 'Top Panel', 'PLY, 3/8', objectMap) - (findItemsInMaterialList('Width', 'Crate12', 'Cleat, Thru-Edge', 'LBR, 1X4', objectMap) * 2)",
+      "Quantity": 2
+    },
+    {
+      "Title": "Crate14",
+      "Description": "Cleat, Interior",
+      "Material": "LBR, 1X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Length', 'Crate12', 'Cleat, Thru-Edge', 'LBR, 1X4', objectMap) - (findItemsInMaterialList('Width', 'Crate13', 'Cleat, Filler-Edge', 'LBR, 1X4', objectMap) * 2)",
+      "Quantity": "Math.ceil((ilength - 2 * findItemsInMaterialList('Width', 'Crate12', 'Cleat, Thru-Edge', 'LBR, 1X4', objectMap)) / 24) ?? 0"
+    },
+    {
+      "Title": "Crate15",
+      "Description": "Hardware",
+      "Material": "LAG, 3/8 X 3",
+      "UOM": "EA",
+      "Width": 0.0,
+      "Length": 0.0,
+      "Quantity": "2 * (Math.ceil(olength / 15) + Math.ceil(owidth / 15))"
+    },
+    {
+      "Title": "Crate16",
+      "Description": "Hardware",
+      "Material": "WASH, 3/8",
+      "UOM": "EA",
+      "Width": 0.0,
+      "Length": 0.0,
+      "Quantity": "2 * (Math.ceil(olength / 15) + Math.ceil(owidth / 15))"
+    }
+  ]
+}

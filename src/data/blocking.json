@@ -1,0 +1,40 @@
+{
+  "blocking": [
+    {
+      "Title": "Blocking1",
+      "Description": "Well member",
+      "Material": "LBR, 2X6",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Width', 'Floater1', 'Deck', 'PLY, 3/4', objectMap)",
+      "Quantity": 2
+    },
+    {
+      "Title": "Blocking2",
+      "Description": "Well member",
+      "Material": "LBR, 2X6",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "12.00",
+      "Quantity": 4
+    },
+    {
+      "Title": "Blocking3",
+      "Description": "Well member",
+      "Material": "LBR, 4X4",
+      "UOM": "BF",
+      "Width": "MatList",
+      "Length": "findItemsInMaterialList('Length', 'Blocking1', 'Well member', 'LBR, 2X6', objectMap) - 2 * findItemsInMaterialList('Thickness', 'Blocking1', 'Well member', 'LBR, 2X6', objectMap)",
+      "Quantity": 2
+    },
+    {
+      "Title": "Blocking4",
+      "Description": "Desiccant",
+      "Material": "DESICCANT, 16-U",
+      "UOM": "EA",
+      "Width": 0.0,
+      "Length": 0.0,
+      "Quantity": "Math.ceil((((findItemsInMaterialList('Quantity', 'Floater1', 'Deck', 'PLY, 3/4', objectMap) / 2) * findItemsInMaterialList('Length', 'Floater1', 'Deck', 'PLY, 3/4', objectMap) * findItemsInMaterialList('Width', 'Floater1', 'Deck', 'PLY, 3/4', objectMap) * findItemsInMaterialList('Thickness', 'Floater1', 'Deck', 'PLY, 3/4', objectMap))+(findItemsInMaterialList('Quantity', 'Blocking1', 'Well member', 'LBR, 2X6', objectMap) * findItemsInMaterialList('Length', 'Blocking1', 'Well member', 'LBR, 2X6', objectMap) * findItemsInMaterialList('Width', 'Blocking1', 'Well member', 'LBR, 2X6', objectMap) * findItemsInMaterialList('Thickness', 'Blocking1', 'Well member', 'LBR, 2X6', objectMap))+(findItemsInMaterialList('Quantity', 'Blocking2', 'Well member', 'LBR, 2X6', objectMap) * findItemsInMaterialList('Length', 'Blocking2', 'Well member', 'LBR, 2X6', objectMap) * findItemsInMaterialList('Width', 'Blocking2', 'Well member', 'LBR, 2X6', objectMap) * findItemsInMaterialList('Thickness', 'Blocking2', 'Well member', 'LBR, 2X6', objectMap))+(findItemsInMaterialList('Quantity', 'Blocking3', 'Well member', 'LBR, 4X4', objectMap) * findItemsInMaterialList('Length', 'Blocking3', 'Well member', 'LBR, 4X4', objectMap) * findItemsInMaterialList('Width', 'Blocking3', 'Well member', 'LBR, 4X4', objectMap) * findItemsInMaterialList('Thickness', 'Blocking3', 'Well member', 'LBR, 4X4', objectMap))) / 1728 * 84.8 / 16)"
+    }
+  ]
+}
